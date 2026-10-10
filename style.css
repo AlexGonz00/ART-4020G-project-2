@@ -330,14 +330,62 @@ header a:hover, header nav a:hover {
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
+.contact {
+  margin: 0 auto;
+  padding: 4em;
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  margin-bottom: 4px;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact p {
+  margin-top: 4px;
+  color: var(--secondary-color);
+  justify-content: center;
+  text-align: center;
+}
+
 form {
   display: grid;
   gap: 0.75rem;
   max-width: 36rem;
+  margin-inline: auto;
+}
+
+label {
+  color: var(--secondary-color);
 }
 
 input,
 textarea,
 button {
   font: inherit;
+  color: var(--light);
+  border-bottom: 1px solid var(--secondary-color);
+  border-radius: 0;
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: color-mix(in srgb, var(--light) 35%, transparent);
+  opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: var(--primary-color);
+  color: var(--light);
+}
+
+.required-asterisk {
+  color: rgba(243, 0, 0, 0.8);
 }

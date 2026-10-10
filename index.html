@@ -147,18 +147,22 @@
 
       <section id="contact" class="contact">
         <h2>Contact</h2>
-        <form action="thank-you.html" method="get">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name">
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-
-          <button type="submit">Send</button>
-        </form>
+        <p>These items above are meant to work as a reference, and if you have any suggestions, reach out below!</p>
+        <div class="form-container">
+          <form action="https://formspree.io/f/xnpjvoqr" method="POST">
+            <label style="color: gray; font-size: 0.8em;">field marks <span class="required-asterisk">*</span> are required</label>
+            <label for="name">Name <span class="required-asterisk">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="name" required>
+  
+            <label for="email">Email <span class="required-asterisk">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="email" required>
+  
+            <label for="message">Message <span class="required-asterisk">*</span></label>
+            <textarea id="message" name="message" placeholder="type your message here" required></textarea>
+  
+            <button class="button" type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
 
