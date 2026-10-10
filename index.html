@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/bread_icon.png">
-    <title>Project 2 Starter</title>
+    <title>Bread Central</title>
     <link rel="stylesheet" href="Project%202%20Starter_files/styles_RHKR.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="navbar-icon" href="https://learn.quintonjason.com/">
+      <a class="navbar-icon" href="#hero">
         <img src="assets/images/bread_icon.png" alt="">
         <p>Bread Central</p>
       </a>
@@ -23,32 +23,86 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section id="hero" class="hero-section">
         <div class="background-video">
           <video class="hero-video" autoplay muted playsinline loop>
             <source src="/assets/video/kneading_dough.mp4" type="video/mp4">
           </video>
         </div>
-        <div>
+        <div class="hero-text-box">
           <h1>Welcome to Bread Central</h1>
           <p>Looking to advance your bread knowledge? You've come to the right place.</p>
           <a class="button" href="#contact">Contact Us</a>
         </div>
       </section>
 
-      <section class="features" id="features">
-        <article>
-          <h2>Feature One</h2>
-          <p>Describe a useful benefit.</p>
-        </article>
-        <article>
-          <h2>Feature Two</h2>
-          <p>Describe a useful benefit.</p>
-        </article>
-        <article>
-          <h2>Feature Three</h2>
-          <p>Describe a useful benefit.</p>
-        </article>
+      <section id="intro">
+        <div class="intro-container">
+          <div class="intro-text-box">
+            <h2>The Ingredients</h2>
+            <p>What kind of flour should you buy to make good bread at home? There are more choices than ever for finding the right vendor, either locally or online. For this section, we'll review some fundamental ingredients for breadmaking: water, salt, and yeast. They all matter.</p>
+          </div>
+          <div>
+            <img src="assets/images/bread_oven.jpg" alt="" class="intro-img">
+          </div>
+        </div>
+        <div class="ingredients-container">
+          
+          <!-- Water -->
+          <article class="img-right">
+            <div>
+              <h3>Water</h3>
+              <p>Tap water is normally fine, though filtered water is likely better. As a general rule of thumb: if it's good enough to drink, it's good enough for baking.</p>
+            </div>
+            <div class="ingredient-img-box">
+              <img class="ingredient-img" src="assets/images/water.jpg" alt="water">
+            </div>
+          </article>
+          
+          <!-- Salt -->
+          <article class="img-left">
+            <div class="ingredient-img-box">
+              <img class="ingredient-img" src="assets/images/salt_on_pretzels.jpg" alt="water">
+            </div>
+            <div>
+              <h3>Salt</h3>
+              <p>
+                When baking, I prefer a fine sea salt. Avoid iodized salt, as iodine inhibits fermentation and you can taste it.
+                <br>
+                Salt slows the fermentation of bread dough, and that's a good thing. Without it, bread dough will rise very fast and taste a bit more bland.
+              </p>
+            </div>
+          </article>
+
+          <!-- Yeast -->
+          <article class="img-right">
+            <div>
+              <h3>Yeast</h3>
+              <p>You're likey to find three kinds of yeast at the store: active dry, rapid rise, and instant. What differentiates them is their coating, the way the yeast is manufactured, and performance.
+                <br>
+                Professional bakers use the term <span style="font-style: italic;">commercial yeast</span> to refer to what they consider as store-bought yeast. Commercial yeast causes bread dough to rise faster and provide more lift, producing bread with a light texture and more volume than levain breads.
+              </p>
+            </div>
+            <div class="ingredient-img-box">
+              <img class="ingredient-img" src="assets/images/sourdough_starter.jpg" alt="water">
+            </div>
+          </article>
+
+          <!-- Salt -->
+          <article class="img-left">
+            <div class="ingredient-img-box">
+              <img class="ingredient-img" src="assets/images/salt_on_pretzels.jpg" alt="water">
+            </div>
+            <div>
+              <h3>Flour</h3>
+              <p>
+                After the wheat grain is harvested, it is milled, the process that takes the whole grain and blends it down into the type of flour desired. This usually involves removing some or all of the germ and endosperm to get the right texture and protein content for the type of flour to be sold.
+                <br>
+                These flours include all-purpose, self-rising, bread, cake, pastry, whole wheat, barley, and many more.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="contact" class="contact">
