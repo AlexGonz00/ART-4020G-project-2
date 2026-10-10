@@ -8,6 +8,9 @@
     <title>Bread Central</title>
     <link rel="stylesheet" href="Project%202%20Starter_files/styles_RHKR.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
@@ -17,7 +20,6 @@
       </a>
       
       <nav aria-label="Primary navigation">
-        <a href="#features" class="button">Features</a>
         <a href="#contact" class="button">Contact</a>
       </nav>
     </header>
@@ -27,7 +29,7 @@
       <section id="hero" class="hero-section">
         <div class="background-video">
           <video class="hero-video" autoplay muted playsinline loop>
-            <source src="/assets/video/kneading_dough.mp4" type="video/mp4">
+            <source src="assets/video/kneading_dough.mp4" type="video/mp4">
           </video>
         </div>
         <div class="hero-text-box">
@@ -109,7 +111,7 @@
 
       <!-- Equipment -->
       <section class="equipment" id="equipment">
-        <div class="intro-container">
+        <div>
           <div class="intro-text-box">
             <h2>Equipment</h2>
             <p>Any job is easier when you got the right tools. Some are essential, while others make parts of the project less of a hassle. It feels good when you have everything in its place, and the task at hand is faster and more efficient when your not looking for this and that throughout the whole process. A few items I recommend for breadmaking goes as follow:</p>
@@ -150,7 +152,7 @@
         <p>These items above are meant to work as a reference, and if you have any suggestions, reach out below!</p>
         <div class="form-container">
           <form action="https://formspree.io/f/xnpjvoqr" method="POST">
-            <label style="color: gray; font-size: 0.8em;">field marks <span class="required-asterisk">*</span> are required</label>
+            <label class="field-mark-notice">field marks <span class="required-asterisk">*</span> are required</label>
             <label for="name">Name <span class="required-asterisk">*</span></label>
             <input id="name" name="name" type="text" autocomplete="name" placeholder="name" required>
   
@@ -165,6 +167,10 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <p>A website by Alex Gonzales</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
